@@ -1,0 +1,335 @@
+/* Custom Light Lavender Theme for Bootstrap */
+:root {
+    --bs-primary: #d4c5e8;
+    --bs-primary-rgb: 212, 197, 232;
+    --bs-secondary: #9b8db3;
+    --bs-secondary-rgb: 155, 141, 179;
+    --bs-body-color: #5a4a7a;
+    --bs-body-bg: #faf8fc;
+    --bs-border-color: #e8dde8;
+    --bs-link-color: #6b5b95;
+    --bs-link-hover-color: #5a4a7a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #faf8fc;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Override Bootstrap button colors */
+.btn-primary {
+    background-color: #d4c5e8;
+    border-color: #d4c5e8;
+    color: #5a4a7a;
+    font-weight: 400;
+}
+
+.btn-primary:hover {
+    background-color: #c8b5dc;
+    border-color: #c8b5dc;
+    color: #5a4a7a;
+}
+
+.btn-outline-primary {
+    color: #6b5b95;
+    border-color: #d4c5e8;
+    font-weight: 400;
+}
+
+.btn-outline-primary:hover {
+    background-color: #d4c5e8;
+    border-color: #d4c5e8;
+    color: #5a4a7a;
+}
+
+.btn-outline-secondary {
+    color: #6b5b95;
+    border-color: #e8dde8;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e8dde8;
+    border-color: #e8dde8;
+    color: #5a4a7a;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border: 1px solid #e8dde8;
+    border-radius: 12px;
+}
+
+/* Blue CTA card for initial welcome */
+#main-card.cta-blue {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    border: none;
+}
+
+#main-card.cta-blue .card-body {
+    color: white;
+}
+
+#main-card.cta-blue .text-muted {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 2px 8px rgba(200, 180, 220, 0.15) !important;
+}
+
+/* Guest info card */
+.guest-info-card {
+    background: #f5f0fa;
+    border: 1px solid #e8dde8;
+    border-radius: 12px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.guest-info-card h2 {
+    color: #5a4a7a;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.table-number-display p.text-muted {
+    color: #9b8db3 !important;
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+}
+
+.table-number-display .display-2 {
+    color: #6b5b95;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Welcome message (outside the card) */
+#welcome-message {
+    color: #5a4a7a;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#welcome-message .signature {
+    display: block;
+    margin-top: 12px;
+    font-style: italic;
+    color: #6b5b95;
+}
+
+/* Home button - handled by hidden class */
+
+/* Alert styling */
+.alert-info {
+    background-color: #f0ebf5;
+    border-color: #e8dde8;
+    color: #8b7ba8;
+}
+
+.alert-success {
+    background-color: #e8f0e8;
+    border-color: #d4e0d4;
+    color: #6b8e6b;
+}
+
+.alert-danger {
+    background-color: #f5e8e8;
+    border-color: #e8d4d4;
+    color: #b88b8b;
+}
+
+/* NFC ID display */
+.nfc-id-value {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #5a4a7a;
+    background: #faf8fc;
+    padding: 12px;
+    border-radius: 6px;
+    word-break: break-all;
+    font-weight: 400;
+}
+
+/* Form select */
+.form-select {
+    border-color: #e8dde8;
+    color: #5a4a7a;
+}
+
+.form-select:focus {
+    border-color: #d4c5e8;
+    box-shadow: 0 0 0 0.25rem rgba(212, 197, 232, 0.25);
+}
+
+/* Heading colors */
+h1.display-4 {
+    color: #6b5b95;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Wedding title with Tan Mon Cheri font */
+@font-face {
+    font-family: 'Tan Mon Cheri';
+    src: url('TanMonCheri-Regular.woff2') format('woff2'),
+         url('TanMonCheri-Regular.woff') format('woff'),
+         url('TanMonCheri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tan Mon Cheri';
+    src: url('TanMonCheri-Bold.woff2') format('woff2'),
+         url('TanMonCheri-Bold.woff') format('woff'),
+         url('TanMonCheri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.wedding-title {
+    font-family: 'Tan Mon Cheri', 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p.fs-5 {
+    color: #9b8db3;
+    font-weight: 300;
+}
+
+/* Card title */
+.card-title {
+    color: #6b5b95;
+    font-weight: 400;
+}
+
+/* Text muted */
+.text-muted {
+    color: #9b8db3 !important;
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .logo-container {
+        justify-content: flex-start;
+    }
+}
+
+.wedding-logo {
+    max-width: 280px;
+    max-height: 210px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.wedding-logo:hover {
+    opacity: 1;
+}
+
+/* Invitation image */
+.invitation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(200, 180, 220, 0.15);
+}
+
+/* Hidden utility */
+.hidden {
+    display: none !important;
+}
+
+/* Find someone section + directory table */
+.find-someone-card h3 {
+    color: #6b5b95;
+    font-weight: 400;
+}
+
+.guest-directory-table th {
+    color: #6b5b95;
+    font-weight: 500;
+    border-bottom-color: #e8dde8;
+}
+
+.guest-directory-table td {
+    border-top-color: #f0ebf5;
+    color: #5a4a7a;
+}
+
+/* "We think you should meet" divider */
+.meet-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #9b8db3;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.meet-divider::before,
+.meet-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e8dde8;
+}
+
+.meet-divider span {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .table-number-display .display-2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    h1.display-4 {
+        font-size: 2rem;
+    }
+    
+    .table-number-display .display-2 {
+        font-size: 2.5rem;
+    }
+}
