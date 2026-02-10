@@ -18,6 +18,11 @@ body {
     padding: 20px;
 }
 
+/* Override container top padding */
+.container {
+    padding-top: 8px !important;
+}
+
 /* Override Bootstrap button colors */
 .btn-primary {
     background-color: #d4c5e8;

@@ -32,10 +32,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 function setupFindSomeonePage() {
     const searchInput = document.getElementById('guest-search');
     const tableBody = document.getElementById('guest-table-body');
-    const guestCount = document.getElementById('guest-count');
     const emptyState = document.getElementById('guest-directory-empty');
 
-    if (!searchInput || !tableBody || !guestCount || !emptyState) return;
+    if (!searchInput || !tableBody || !emptyState) return;
 
     const guests = Array.from(guestData.entries())
         .filter(([nfcId, g]) => g && g.name && g.table)
@@ -80,7 +79,6 @@ function setupFindSomeonePage() {
             tableBody.appendChild(tr);
         }
 
-        guestCount.textContent = String(filtered.length);
         emptyState.classList.toggle('hidden', filtered.length !== 0);
     }
 
