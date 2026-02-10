@@ -297,7 +297,6 @@ function handleNFCTag(serialNumber, message) {
     
     if (guest) {
         displayGuestInfo(serialNumber, guest.name, guest.table);
-        updateStatus('Guest information found!', 'success');
     } else {
         showError(`No guest found for NFC ID: ${serialNumber}`);
         updateStatus('Guest not found in database.', 'error');
