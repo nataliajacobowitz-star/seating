@@ -20,7 +20,7 @@ body {
 
 /* Override container top padding */
 .container {
-    padding-top: 8px !important;
+    padding-top: 2px !important;
 }
 
 /* Override Bootstrap button colors */
