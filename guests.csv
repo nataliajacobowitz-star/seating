@@ -1,21 +1,21 @@
-NFC ID	Name	Table	Person to meet
-nfc_001	Steve and Heidi Lamar	2	
-nfc_002	Diane Michaels and Kevin Brown	2	
-nfc_003	Shmuel and Sara Lamm	2	
-nfc_004	Jordan Lamar and Davina Goodman	2	
-nfc_005	Elliot Goodman and Jillian Davidson	2	
-nfc_006	Shalom and Tina Lamm	2	David and Jackie Jacobowitz
-nfc_007	Dennis and Sue Lamar	4	
-nfc_008	Renee Lisgaris	4	
-nfc_009	Jim Lamar	4	
-nfc_010	Erin Esteban	4	
-nfc_011	Tom Lamar	4	
-nfc_012	Marc Lowenstein and Debbie Davies	4	
-nfc_013	Margot Lamar	4	
-nfc_014	Paul Lamar	4	
-nfc_015	Rabbi Sholom and Shana Simon	6	
-nfc_016	Eric and Sandy Koehler	6	
-nfc_017	Mark and Lucy Lapidus	6	
-nfc_018	Sharon Asro	6	
-nfc_019	Benny and Bayla Marks	6	
-nfc_020	David and Jackie Jacobowitz	12	
+NFC ID,Name,Table,Person to meet
+nfc_001,Steve and Heidi Lamar,2,
+nfc_002,Diane Michaels and Kevin Brown,2,
+nfc_003,Shmuel and Sara Lamm,2,
+nfc_004,Jordan Lamar and Davina Goodman,2,
+nfc_005,Elliot Goodman and Jillian Davidson,2,
+nfc_006,Shalom and Tina Lamm,2,David and Jackie Jacobowitz
+nfc_007,Dennis and Sue Lamar,4,
+nfc_008,Renee Lisgaris,4,
+nfc_009,Jim Lamar,4,
+nfc_010,Erin Esteban,4,
+nfc_011,Tom Lamar,4,
+nfc_012,Marc Lowenstein and Debbie Davies,4,
+nfc_013,Margot Lamar,4,
+nfc_014,Paul Lamar,4,
+nfc_015,Rabbi Sholom and Shana Simon,6,
+nfc_016,Eric and Sandy Koehler,6,
+nfc_017,Mark and Lucy Lapidus,6,
+nfc_018,Sharon Asro,6,
+nfc_019,Benny and Bayla Marks,6,
+nfc_020,David and Jackie Jacobowitz,12,
