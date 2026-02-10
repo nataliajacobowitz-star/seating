@@ -37,9 +37,13 @@ function setupFindSomeonePage() {
 
     if (!searchInput || !tableBody || !guestCount || !emptyState) return;
 
-    const guests = Array.from(guestData.values())
-        .filter(g => g && g.name && g.table)
-        .map(g => ({ name: String(g.name).trim(), table: String(g.table).trim() }))
+    const guests = Array.from(guestData.entries())
+        .filter(([nfcId, g]) => g && g.name && g.table)
+        .map(([nfcId, g]) => ({ 
+            nfcId: nfcId,
+            name: String(g.name).trim(), 
+            table: String(g.table).trim() 
+        }))
         .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
 
     function render(filterText = '') {
@@ -54,7 +58,18 @@ function setupFindSomeonePage() {
             const tr = document.createElement('tr');
 
             const nameTd = document.createElement('td');
-            nameTd.textContent = g.name;
+            const nameLink = document.createElement('a');
+            nameLink.href = `index.html?nfc=${g.nfcId}`;
+            nameLink.textContent = g.name;
+            nameLink.style.textDecoration = 'none';
+            nameLink.style.color = 'inherit';
+            nameLink.addEventListener('mouseenter', () => {
+                nameLink.style.textDecoration = 'underline';
+            });
+            nameLink.addEventListener('mouseleave', () => {
+                nameLink.style.textDecoration = 'none';
+            });
+            nameTd.appendChild(nameLink);
 
             const tableTd = document.createElement('td');
             tableTd.className = 'text-end fw-light';
