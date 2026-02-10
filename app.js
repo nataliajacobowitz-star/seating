@@ -43,7 +43,14 @@ function setupFindSomeonePage() {
             name: String(g.name).trim(), 
             table: String(g.table).trim() 
         }))
-        .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+        .sort((a, b) => {
+            // Extract last name (last word) from each name
+            const aLastName = a.name.split(' ').pop() || '';
+            const bLastName = b.name.split(' ').pop() || '';
+            // Sort by last name, then by full name if last names are the same
+            const lastNameCompare = aLastName.localeCompare(bLastName, undefined, { sensitivity: 'base' });
+            return lastNameCompare !== 0 ? lastNameCompare : a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+        });
 
     function render(filterText = '') {
         const q = filterText.trim().toLowerCase();
