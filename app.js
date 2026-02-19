@@ -337,10 +337,14 @@ function displayGuestInfo(nfcId, name, table) {
         welcomeMessageDiv.classList.remove('hidden');
     }
     
-    // Show home button
+    // Show home button and debug button
     const homeButton = document.getElementById('home-button');
     if (homeButton) {
         homeButton.classList.remove('hidden');
+    }
+    const debugButton = document.getElementById('debug-button');
+    if (debugButton) {
+        debugButton.classList.remove('hidden');
     }
     
     // Hide initial welcome message
