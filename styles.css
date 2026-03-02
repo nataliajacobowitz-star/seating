@@ -247,12 +247,6 @@ p.fs-5 {
     align-items: center;
 }
 
-@media (min-width: 992px) {
-    .logo-container {
-        justify-content: flex-start;
-    }
-}
-
 .wedding-logo {
     max-width: 280px;
     max-height: 210px;
